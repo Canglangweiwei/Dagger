@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Dagger_MVP_Rxjava_Demo2</string>
+    <string name="news">新闻</string>
+</resources>
