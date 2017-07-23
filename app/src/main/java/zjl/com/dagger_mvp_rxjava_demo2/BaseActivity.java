@@ -10,7 +10,7 @@ import zjl.com.dagger_mvp_rxjava_demo2.app.MyApplication;
 
 /**
  * <p>
- * BaseActivity
+ * 描述：BaseActivity
  * </p>
  * Created by weiwei on 2016/8/26.
  */
