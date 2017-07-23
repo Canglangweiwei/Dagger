@@ -16,6 +16,9 @@ import zjl.com.dagger_mvp_rxjava_demo2.app.MyApplication;
  */
 public abstract class BaseActivity extends AppCompatActivity {
 
+    /**
+     * Called when a activity page is first load
+     */
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
