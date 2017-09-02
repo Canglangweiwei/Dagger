@@ -1,6 +1,5 @@
 package zjl.com.dagger_mvp_rxjava_demo2.news;
 
-
 import java.util.ArrayList;
 
 import zjl.com.dagger_mvp_rxjava_demo2.BasePresenter;

@@ -1,6 +1,5 @@
 package zjl.com.dagger_mvp_rxjava_demo2.detail;
 
-
 import zjl.com.dagger_mvp_rxjava_demo2.BasePresenter;
 import zjl.com.dagger_mvp_rxjava_demo2.BaseView;
 

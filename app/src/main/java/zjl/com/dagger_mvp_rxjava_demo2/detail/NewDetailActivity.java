@@ -45,6 +45,7 @@ public class NewDetailActivity extends BaseActivity implements NewDetailContract
     NestedScrollView mNestedView;
     @Bind(R.id.share)
     TextView share;
+
     private String title;
 
     @Inject

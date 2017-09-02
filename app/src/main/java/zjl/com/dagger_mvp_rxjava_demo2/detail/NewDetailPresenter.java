@@ -1,6 +1,5 @@
 package zjl.com.dagger_mvp_rxjava_demo2.detail;
 
-
 import android.support.annotation.NonNull;
 
 import javax.inject.Inject;
@@ -18,6 +17,7 @@ public class NewDetailPresenter implements NewDetailContract.Presenter {
     private int id;
     private NewDetailContract.View view;
     private Subscription mSubscription;
+
     @Inject
     NewDetailModel newDetailModel;
 
