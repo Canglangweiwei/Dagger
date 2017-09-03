@@ -24,9 +24,9 @@ public class ApiManager {
     private static final Cache cache = new Cache(MyApplication.sApp.getCacheDir(), cacheSize);
 
     private static final OkHttpClient okHttpClient = new OkHttpClient.Builder()
-            .connectTimeout(20, TimeUnit.SECONDS)       //设置超时时间
-            .readTimeout(20, TimeUnit.SECONDS)          //设置读取超时时间
-            .writeTimeout(20, TimeUnit.SECONDS)         //设置写入超时时间
+            .connectTimeout(20, TimeUnit.SECONDS)       // 设置超时时间
+            .readTimeout(20, TimeUnit.SECONDS)          // 设置读取超时时间
+            .writeTimeout(20, TimeUnit.SECONDS)         // 设置写入超时时间
             .cache(cache)
             .build();
 
@@ -37,17 +37,17 @@ public class ApiManager {
             .client(okHttpClient)
             .build();
 
-    private static final ApiManagerService apiManager = sRetrofit.create(ApiManagerService.class);
+    private static final ApiService apiService = sRetrofit.create(ApiService.class);
 
     public static Observable<NewsList> getLatestNews() {
-        return apiManager.getLatestNews();
+        return apiService.getLatestNews();
     }
 
     public static Observable<NewsList> getBeforeNews(String date) {
-        return apiManager.getBeforeNews(date);
+        return apiService.getBeforeNews(date);
     }
 
     public static Observable<NewsDetail> getNewsDetail(int id) {
-        return apiManager.getNewsDetail(id);
+        return apiService.getNewsDetail(id);
     }
 }

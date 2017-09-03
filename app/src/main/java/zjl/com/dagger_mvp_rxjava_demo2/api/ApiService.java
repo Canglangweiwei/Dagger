@@ -10,7 +10,7 @@ import zjl.com.dagger_mvp_rxjava_demo2.bean.NewsList;
  * @className：ApiManagerService Created by weiwei on 2016/3/2.
  */
 @SuppressWarnings("ALL")
-public interface ApiManagerService {
+public interface ApiService {
 
     @GET("stories/latest")
     Observable<NewsList> getLatestNews();
